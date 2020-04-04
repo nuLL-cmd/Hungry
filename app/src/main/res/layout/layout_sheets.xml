@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="10dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSheet_layout"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:id="@+id/imgSheet_layout"
+                android:layout_width="match_parent"
+                android:src="@drawable/image2"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtSheet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comidaria dos guris"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/cardSheet_layout"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/lblCat_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local:"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10dp"
+            android:textSize="13sp"
+        android:layout_toEndOf="@id/cardSheet_layout"
+        android:layout_below="@id/txtSheet_layout"
+        android:textAlignment="center"/>
+
+
+        <ImageView
+            android:id="@+id/imgCat_layout"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/lblCat_layout"
+            android:layout_alignStart="@id/lblCat_layout"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_restaurant_white_20dp"/>
+
+        <TextView
+            android:id="@+id/txtCat_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurante"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imgCat_layout"
+            android:layout_alignBottom="@id/imgCat_layout"
+            android:layout_alignTop="@id/imgCat_layout"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imgRecom_layout"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/imgCat_layout"
+            android:layout_alignStart="@id/lblCat_layout"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_like_gray_20dp"/>
+
+        <TextView
+            android:id="@+id/txtRecom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="132"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="#1E88E5"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imgRecom_layout"
+            android:layout_alignBottom="@id/imgRecom_layout"
+            android:layout_alignTop="@id/imgRecom_layout"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/imgOpen_layout"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_toEndOf="@id/cardSheet_layout"
+            android:layout_alignStart="@id/lblCat_layout"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@id/cardSheet_layout"
+            android:src="@drawable/ic_location_gray_20dp"/>
+
+        <TextView
+            android:id="@+id/txtStatus_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fechado"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/imgOpen_layout"
+            android:layout_alignBottom="@id/imgOpen_layout"
+            android:layout_alignTop="@id/imgOpen_layout"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/lblInfo_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abre ás"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtStatus_layout"
+            android:layout_alignBottom="@id/imgOpen_layout"
+            android:layout_alignTop="@id/imgOpen_layout"
+            android:textAlignment="center"/>
+
+
+        <TextView
+            android:id="@+id/txtTime_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19:00"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/lblInfo_layout"
+            android:layout_alignBottom="@id/imgOpen_layout"
+            android:layout_alignTop="@id/imgOpen_layout"
+            android:textAlignment="center"/>
+
+
+
+        <ImageView
+            android:id="@+id/imgFav_layout"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/txtTime_layout"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_favorite_border_red_28dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.actvity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardElevation="5dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblDesc_main"
+            app:cardCornerRadius="10dp"
+           android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/lblOla_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="Ola! "
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblName_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/lblOla_main"
+                    android:layout_alignBottom="@id/lblOla_main"
+                    android:layout_toEndOf="@id/lblOla_main"
+                    android:text="Marco"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+                <ImageButton
+                    android:id="@+id/btnSettings_main"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignTop="@id/lblName_main"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/lblName_main"
+                    android:background="@drawable/bg_bt_tools"
+                    android:src="@drawable/ic_settings_white_28" />
+
+
+                <ImageButton
+                    android:id="@+id/btnPhoto_main"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignTop="@id/btnSettings_main"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/btnSettings_main"
+                    android:background="@drawable/bg_bt_tools"
+                    android:src="@drawable/ic_cam_white_28dp" />
+
+                <ImageButton
+                    android:id="@+id/btnFav_main"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignTop="@id/btnPhoto_main"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/btnPhoto_main"
+                    android:background="@drawable/bg_bt_tools"
+                    android:src="@drawable/if_fav_menu_white_32dp" />
+
+                <ImageButton
+                    android:id="@+id/btnLogout_main"
+                    android:layout_width="24dp"
+                    android:layout_height="22dp"
+                    android:layout_alignTop="@id/btnFav_main"
+                    android:layout_marginStart="35dp"
+
+                    android:layout_toEndOf="@id/btnFav_main"
+                    android:background="@drawable/bg_bt_tools"
+                    android:src="@drawable/ic_logout_28dp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/lblTitle_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15sp"
+            android:text="Hungry!!"
+            android:textColor="#E53935"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblDesc_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblTitle_main"
+            android:layout_marginStart="35dp"
+            android:text="Do tamanho da sua fome!"
+            android:textColor="#E53935"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/lblTitle_main"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_new_user_web" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#fff">
+
+<!--        <View
+            android:id="@+id/viewSeparetor_main"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff" />-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_one_main"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="18dp"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.synnapps.carouselview.CarouselView
+
+
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+            android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="5000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp" />
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_two_main"
+            android:layout_width="180dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="160dp"
+            android:layout_toEndOf="@id/cardView_one_main"
+            android:layout_marginStart="5dp"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginEnd="18dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.synnapps.carouselview.CarouselView
+
+                    android:id="@+id/carouselView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="6dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="1dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-128dp">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/viewpagertab"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            app:stl_clickable="true"
+            app:stl_defaultTabBackground="?attr/selectableItemBackground"
+            app:stl_defaultTabTextAllCaps="true"
+            app:stl_defaultTabTextColor="#fff"
+            app:stl_defaultTabTextHorizontalPadding="16dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_defaultTabTextSize="16sp"
+            app:stl_distributeEvenly="true"
+            app:stl_dividerColor="#A6FFFFFF"
+            app:stl_dividerThickness="0dp"
+            app:stl_drawDecorationAfterTab="false"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorColor="#E53935"
+            app:stl_indicatorCornerRadius="2dp"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="4dp"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_overlineColor="#8DFFFFFF"
+            app:stl_overlineThickness="0dp"
+            app:stl_titleOffset="24dp"
+            app:stl_underlineColor="#9AFFFFFF"
+            app:stl_underlineThickness="1dp" >
+
+        </com.ogaclejapan.smarttablayout.SmartTabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewpagertab">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbBolsa_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            android:src="@drawable/ic_car_white_24dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:borderWidth="7dp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
